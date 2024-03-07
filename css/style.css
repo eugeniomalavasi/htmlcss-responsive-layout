@@ -124,6 +124,7 @@ main {
 /* planning section */
 .planning_box {
     background-color: var(--bkg-violet);
+    padding-bottom: 30px;
 }
 
 .app_development {
@@ -159,5 +160,73 @@ main {
 
 
 /* testimonials section */
+.test_card {
+    background-color: var(--bkg-violet);
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.test_card img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+/* MEDIA QUERY TESTIMONIAL SECTION */
+@media screen and (min-width:768px) {
+    .test_card {
+        display: flex;
+        
+    }
+}
+
+/* work with us section */
+.work_with_us {
+    background-color: var(--bkg-violet);
+}
+.work_with_us .container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.work_us_card {
+    background-color: white;
+    color: var(--bkg-violet);
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    /* debug */
+    height: 300px;
+}
+
+
+/* MEDIA QUERY WORK WITH US SECTION */
+/* 768px */
+@media screen and (min-width: 768px) {
+    .work_us_card {
+        width: 49%;  
+    }
+
+    .work_with_us .container  {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .work_us_card {
+        width: 32%;  
+    }
+
+    .work_with_us .container  {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+}
+
 
 /* FOOTER */
