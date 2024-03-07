@@ -126,4 +126,38 @@ main {
     background-color: var(--bkg-violet);
 }
 
+.app_development {
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* MEDIA QUERY PLANNING SECTION */
+@media screen and (min-width:992px) {
+    .planning_box .container {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        padding: 60px;
+        gap: 30px;
+    }
+
+    .col-60 {
+        width: 50%;
+    }
+
+    .col-40 {
+        width: 40%;
+    }
+    
+    .app_development {
+        padding: 30px;
+        position: relative;
+        top: 50px;
+        right: 0;
+    }
+}
+
+
+/* testimonials section */
+
 /* FOOTER */
