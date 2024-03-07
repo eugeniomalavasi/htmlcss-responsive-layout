@@ -107,7 +107,7 @@ main {
         gap: 20px;
     }
 
-    .col-60 {
+    .col-70 {
         width: 70%;
     }
 
@@ -228,5 +228,31 @@ main {
     }
 }
 
+/* ABOUT US SECTION */
+
+/* MEDIA QUERY ABOUT US SECTION */
+@media screen and (min-width:768px) {
+        .about_us .container {
+            display: flex;
+        }
+
+}
+
+/* CTA SECTION */
+.cta_container {
+    background-color: var(--bkg-violet);
+    color: white;
+    /* debug */
+    height: 500px;
+}
+
+.cta_container .container {
+    padding: 2em 0;
+}
 
 /* FOOTER */
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 2em 0;
+}
