@@ -18,6 +18,8 @@ body  {
 /* variables */
 :root {
     --headerblue: #0084fd;
+    --cardazure: #b5ddff; 
+    --bkg-violet: #9792e4;
 }
 /* /variables */
 
@@ -86,5 +88,42 @@ header .container {
 }
 
 /* MAIN */
+
+main {
+    padding-top: 90px;
+}
+/* features section */
+.card_features {
+    background-color:var(--cardazure);
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERY MAIN */
+@media screen and (min-width:768px) {
+    .two_box_row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .col-60 {
+        width: 70%;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .three_box_row {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* planning section */
+.planning_box {
+    background-color: var(--bkg-violet);
+}
 
 /* FOOTER */
