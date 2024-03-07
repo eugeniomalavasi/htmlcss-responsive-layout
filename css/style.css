@@ -8,13 +8,82 @@
 img {
     max-width: 100%;
 }
-
+/* COMMON */
 /* typo */
 body  {
     font-family: PT Sans, sans-serif;
 }
+/* /typo */
 
+/* variables */
+:root {
+    --headerblue: #0084fd;
+}
+/* /variables */
+
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
 /* HEADER */
+header {
+    background-color: var(--headerblue);
+    height: 70px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+header .container {
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.hamburger_btn button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.desk_nav {
+    display: none;
+}
+
+.desk_nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.desk_nav a {
+    text-decoration: none; 
+    color: white; 
+}
+
+/* MEDIA PX 992*/
+@media screen and (min-width:992px) {
+    .container {
+        width: 70%;
+    }
+
+    .desk_nav {
+        display: block;
+    }
+    
+    .hamburger_btn {
+        display: none;
+    }
+}
 
 /* MAIN */
 
