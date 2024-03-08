@@ -317,23 +317,56 @@ main {
 .work_with_us {
     background-color: var(--bkg-violet);
 }
-.work_with_us .container {
-    display: flex;
-    flex-direction: column;
-    
-}
 
+.work_with_us .container {
+    flex-direction: column;
+}
 .work_us_card {
     background-color: white;
     color: var(--bkg-violet);
     border-radius: 20px;
     margin-bottom: 20px;
-
-    /* debug */
-    height: 300px;
+    flex-direction: column;
+    padding: 0 1.5rem
 }
 
+.work_with_us h3 {
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
 
+.work_us_card .numbers  {
+    font-size: 5rem;
+    color: var(--bkg-violet);
+    font-weight: 800;
+    padding-top: 1rem;
+    display: inline-block;
+}
+
+.work_with_us .work_us_card h3 {
+    color: #9792e4;
+    font-weight: 600;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.work_us_card a {
+    color: white;
+    background-color: var(--bkg-violet);
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+}
+
+.button {
+    margin: 2rem 0;
+}
+
+.work_us_card p {
+    color: black;
+    line-height: 1.5rem;
+}
 /* MEDIA QUERY WORK WITH US SECTION */
 /* 768px */
 @media screen and (min-width: 768px) {
@@ -361,11 +394,62 @@ main {
 }
 
 /* ABOUT US SECTION */
+.about_us h2 {
+    font-size: clamp(3rem, 2.5vw, 4rem);
+    padding: 2rem 0;
+    color: var(--bkg-violet);
+}
+
+.left_about_us p {
+    line-height: 1.5rem;
+}
+.right_about_us img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about_us_comp {
+    position: relative;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.big_quote {
+    font-size: 4rem;
+    color: var(--bkg-violet);
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
+
+.right_about_us h3 {
+    color: var(--bkg-violet);
+    padding-bottom: 1rem;
+}
+
+.right_about_us a {
+    color: white;
+    background-color: var(--bkg-violet);
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+}
 
 /* MEDIA QUERY ABOUT US SECTION */
 @media screen and (min-width:768px) {
         .about_us .container {
             display: flex;
+            gap: 1.5rem;
+            padding-bottom: 3rem;
+        }
+
+        .left_about_us p {
+            padding-right: 1rem;
+
         }
 
 }
