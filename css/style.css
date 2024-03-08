@@ -164,7 +164,17 @@ main {
         text-align: left;
     }
 }
+/* 992px */
+@media screen and (min-width: 992px) {
+     .hero_img  {
+        display: flex;
+     }
 
+     .right_hero_block {
+        display: flex;
+        align-items: flex-end;
+     }
+}
 
 /* planning section */
 .planning_box {
