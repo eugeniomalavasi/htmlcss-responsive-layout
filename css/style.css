@@ -82,6 +82,7 @@ header .container {
     color: white; 
 }
 
+
 /* MEDIA PX 992*/
 @media screen and (min-width:992px) {
     .container {
@@ -94,6 +95,18 @@ header .container {
     
     .hamburger_btn {
         display: none;
+    }
+
+    ul .white_button {
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    ul .white_button a {
+        background-color: white;
+        color: #333333;
+        padding: 8px;
+        border-radius: 20px;
     }
 }
 
@@ -233,7 +246,7 @@ main {
 @media screen and (min-width:992px) {
     .planning_box .container {
         display: flex;
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         padding: 60px;
         gap: 5rem;
