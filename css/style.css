@@ -169,12 +169,53 @@ main {
 /* planning section */
 .planning_box {
     background-color: var(--bkg-violet);
-    padding-bottom: 30px;
+    padding: 3rem 3rem;
+    color: white;
 }
 
 .app_development {
     background-color: white;
     border-radius: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.planning_box h2 {
+    text-align: left;
+    padding: 2rem 0;
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+}
+
+.planning_box p {
+    padding-bottom: 2rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.planning_box a {
+    color: black;
+    position: absolute;
+
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bkg-violet);
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_development h3 {
+   color: black; 
+   padding: 2rem 0;
+   font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 /* MEDIA QUERY PLANNING SECTION */
@@ -185,7 +226,7 @@ main {
         margin: 0 auto;
         padding: 60px;
         gap: 5rem;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .col-60 {
