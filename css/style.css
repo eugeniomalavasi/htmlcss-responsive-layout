@@ -267,16 +267,49 @@ main {
 
 .test_card img {
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
+    margin-bottom: 1rem;
 }
-/* MEDIA QUERY TESTIMONIAL SECTION */
 
+.testimonials h4 {
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+.testimonials h3 {
+    color: var(--bkg-violet);
+    padding: 2rem 0;
+}
+
+.testimonials .container p {
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.test_name {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+}
+
+/* MEDIA QUERY TESTIMONIAL SECTION */
 @media screen and (min-width:768px) {
     .test_card {
         display: flex;
         flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .test_quote {
+        padding: 0 1.5rem;
+    }
+
+    .test_card img {
+        margin-bottom: 0;
     }
 }
 
