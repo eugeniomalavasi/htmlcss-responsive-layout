@@ -1,0 +1,43 @@
+body {
+    background-color: #3C3C3C;
+}
+
+.card_features {
+    background-color: #FDC15F;
+    color: white;
+}
+
+.planning_box {
+}
+
+.testimonials .container p,h4 {
+    color: white;
+}
+
+.test_card {
+    background-color: #0084fd;
+}
+
+.work_with_us {
+    background-color: #FDC15F;
+}
+
+.left_about_us p {
+    color: white;
+}
+
+.about_us h2 {
+    color: #0084fd;
+}
+
+.about_us h3 {
+    color: #0084fd;
+}
+
+.big_quote {
+    color: #0084fd;
+}
+
+.right_about_us a {
+    background-color: #0084fd;
+}
